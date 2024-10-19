@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-size-base: 18px;
+  --font-size-large: 24px;
+  --font-size-xl: 32px;
+}
+
+body {
+  @apply text-lg;
+  font-size: var(--font-size-base);
+}
+
+.btn {
+  @apply px-6 py-4 rounded-lg font-semibold text-white transition-colors duration-300 text-xl min-w-[200px] min-h-[64px];
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 hover:bg-gray-700;
+}
+
+.input {
+  @apply w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-xl;
+  min-height: 48px;
+}
+
+.label {
+  @apply block mb-2 font-semibold text-gray-700 dark:text-gray-300 text-xl;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md;
+}
+
+.breadcrumb {
+  @apply text-lg mb-4;
+}
+
+.breadcrumb-item {
+  @apply text-blue-600 dark:text-blue-400 hover:underline;
+}
+
+.breadcrumb-separator {
+  @apply mx-2 text-gray-500 dark:text-gray-400;
+}
+
+.milestone {
+  @apply bg-yellow-100 dark:bg-yellow-900 border-2 border-yellow-400 dark:border-yellow-600 p-4 rounded-lg mb-6;
+}
+
+.milestone-title {
+  @apply text-2xl font-bold text-yellow-800 dark:text-yellow-200 mb-2;
+}
+
+.milestone-description {
+  @apply text-xl text-yellow-700 dark:text-yellow-300;
+}
